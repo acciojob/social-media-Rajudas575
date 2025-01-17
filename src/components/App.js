@@ -11,7 +11,7 @@ import './../styles/App.css';
 const App = () => {
   const [posts, setPosts] = useState([]);
   const [users, setUsers] = useState([{ id: 1, name: 'Author 1' }]);
-
+  const TITLE = 'SocialMedia';
   const addPost = (post) => setPosts([...posts, { id: posts.length + 1, ...post }]);
   const editPost = (id, updatedPost) =>
     setPosts(posts.map((post) => (post.id === id ? { ...post, ...updatedPost } : post)));
@@ -19,6 +19,7 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
+    <title>{ TITLE }</title>
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage posts={posts} onReact={() => {}} />} />
