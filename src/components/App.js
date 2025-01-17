@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from 'LandingPage';
-import UsersPage from 'UsersPage';
-import UserPosts from 'UserPosts';
-import NotificationsPage from 'NotificationsPage';
-import CreatePost from 'CreatePost';
-import EditPost from 'EditPost';
+import LandingPage from './landingpage';
+import UsersPage from './UsersPage';
+import UserPosts from './UserPosts';
+import NotificationsPage from './NotificationsPage';
+import CreatePost from './CreatePost';
+import EditPost from './EditPost';
 import './../styles/App.css';
 
 const App = () => {
